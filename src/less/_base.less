@@ -25,19 +25,36 @@ a {
 body {
   .font-PT;
   .margin-none;
-  background: url(/assets/images/bg.jpg) center center;
+  background: url(/assets/images/bg.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
-
-
 
   .page-wrapper {
     margin: 0 auto; 
     width: 100%;
     min-height: ~'calc(100% - 80px)';
-    max-width: 1500px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
 
-    background: #FFF;
+    .content {
+
+      
+      width: 100%;
+      display: flex;
+
+
+      .content-left {
+        background: @COLOR-BLACK;
+        .logo {
+          background: url("/assets/images/logo.png");
+        }
+      }
+      .content-right {
+
+      }
+    }
+
   }
 
 }

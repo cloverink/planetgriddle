@@ -12,6 +12,7 @@
         "dist_filename": "styles.css"
     },
     "vendors": [
-        "src/css/foundation.min.css"
+        "src/css/bootstrap.min.css",
+        "src/css/font-awesome.min.css"
     ]
 }

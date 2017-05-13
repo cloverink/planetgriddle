@@ -19,7 +19,7 @@
   
   <body data-template="<?=$template_name?>">
     
-    <div class="page-wrapper container-fluid">
+    <div class="page-wrapper container">
       
       <?php include $target_file; ?> 
       

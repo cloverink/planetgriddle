@@ -1,8 +1,8 @@
-<div class="row">
-  <div class="columns col-md-4">
-    
+<div class="row content">
+  <div class="content-left columns col-xs-3">
+    <div class="logo"></div>
   </div>
-  <div class="columns col-md-6 col-md-offset-1">
-    
+  <div class="content-right columns col-xs-6 col-sm-offset-1">
+    2
   </div>
 </div>
