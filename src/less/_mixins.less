@@ -1,0 +1,61 @@
+.anchor(@top: auto, @right: auto, @bottom: auto, @left: auto) {
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.anchor-all(@value: auto) {
+    top: @value;
+    right: @value;
+    bottom: @value;
+    left: @value;
+}
+.clearfix() {
+    &:before, &:after {
+		display: table;
+		content: " ";
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.placeholder-color(@colr: #ccc, @text-style: normal) {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: .9rem;
+        color: @colr;
+        font-style: @text-style;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        font-size: .9rem;
+        color: @colr;
+        font-style: @text-style;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        font-size: .9rem;
+        color: @colr;
+        font-style: @text-style;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        font-size: .9rem;
+        color: @colr;
+        font-style: @text-style;
+    }
+}
+
+.flip-horz {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.flip-vert {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}

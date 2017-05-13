@@ -1,0 +1,22 @@
+{
+    "less_config": {
+        "watch_path": "./src/less/**/*.less",
+        "source_path": "./src/less/",
+        "target_less_filename": "main.less",
+        "compiled_filename": "less-styles.css",
+        "compiled_output": "./tmp/"
+    },
+    "css_config": {
+        "tmp_concat_path": "./tmp/",
+        "dist_path": "./dist/styles/",
+        "dist_filename": "styles.css"
+    },
+    "vendors": [
+        "src/css/web-font.css",
+        "src/css/font-awesome.css",
+        "src/css/material-icon.css",
+        "src/css/jquery.fancybox.css",
+        "node_modules/swiper/dist/css/swiper.min.css",
+        "src/css/foundation.min.css"
+    ]
+}

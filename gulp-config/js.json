@@ -1,0 +1,30 @@
+{
+    "vendors": {
+        "target_path": "./dist/scripts",
+        "target_filename": "vendors.js",
+        "tmp_path": "./tmp/",
+        "file_list": [
+            "node_modules/fastclick/lib/fastclick.js",
+            "node_modules/jquery/dist/jquery.min.js",
+            "src/js/vendors/foundation.min.js",
+            "src/js/vendors/jquery.resizestop.min.js",
+            "node_modules/imagesloaded/imagesloaded.pkgd.min.js",
+            "node_modules/verge/verge.min.js",
+            "node_modules/waypoints/lib/jquery.waypoints.min.js",
+            "src/js/vendors/jquery.fancybox.pack.js",
+            "node_modules/swiper/dist/js/swiper.jquery.min.js",
+            "src/js/vendors/pagination.min.js",
+            "node_modules/waypoints/lib/jquery.waypoints.min.js"
+        ]
+    },
+    "apps": {
+        "target_path": "./dist/scripts",
+        "target_filename": "apps.js",
+        "watch_path": "./src/js/**/*.js",
+        "tmp_path": "./tmp/",
+        "file_list": [
+            "src/js/app/main.js",
+            "src/js/app/map.js"
+        ]
+    }
+}
