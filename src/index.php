@@ -5,7 +5,7 @@
 
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,13 +18,15 @@
   </head>
   
   <body data-template="<?=$template_name?>">
-    <?php include "partials/header.php" ?>
+    
     <div id="dvPageWrapper" class="page-wrapper">
+      <?php include "partials/header.php" ?>
       <main>
         <?php include $target_file; ?>        
       </main>
-      <?php include "partials/footer.php" ?>
-    </div>        
+    </div>
+
+    <?php include "partials/footer.php" ?>
     
     <script src="scripts/vendors.min.js"></script>
     <script src="scripts/apps.min.js"></script>

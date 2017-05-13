@@ -1,11 +1,41 @@
-
-
 @BASE-FONT : 'PT Sans Narrow', sans-serif;
+@COLOR-BLACK : #1a1b1b;
 
 .font-PT {
   font-family: @BASE-FONT;
+  font-weight: 400;
+}
+.font-PT-Bold {
+  .font-PT;
+  font-weight: 700;
+}
+.margin-none {
+  margin: 0 0;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   .font-PT;
+  .margin-none;
+  background: url(/assets/images/bg.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+
+  .page-wrapper {
+    margin: 0 auto; 
+    width: 100%;
+    min-height: ~'calc(100% - 80px)';
+    max-width: 1500px;
+  }
+
 }

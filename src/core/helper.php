@@ -1,7 +1,16 @@
 <?php
 
 class Helper {
+  
 }
+
+
+$social_link = [
+  "fb" => "http://facebook.com",
+  "tw" => "http://twitter.com",
+  "fq" => "http://foursquare.com",
+  "ig" => "http://instagram.com",
+];
 
 
 $request_uri = $_SERVER["REQUEST_URI"];
