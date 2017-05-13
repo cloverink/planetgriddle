@@ -294,7 +294,6 @@ gulp.task('images_minify', ['assets_clean'], function (cb) {
     ], cb);
 });
 
-
 gulp.task("default", ["images_minify", "html_watch", "htaccess_copy", "assets_watch", "init_js_vendors", "init_js_apps", "init_less"]);
 
 gulp.task("deploy-images", ["images_minify"]);
