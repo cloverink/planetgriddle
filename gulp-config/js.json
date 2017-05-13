@@ -5,7 +5,7 @@
         "tmp_path": "./tmp/",
         "file_list": [
             "node_modules/jquery/dist/jquery.min.js",
-            "src/js/vendors/foundation.min.js"
+            "src/js/vendors/bootstrap.min.js"
         ]
     },
     "apps": {

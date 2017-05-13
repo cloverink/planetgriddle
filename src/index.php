@@ -11,7 +11,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>PLANET GRIDDLE</title>
-    <meta name="description" content="">
+    <meta name="description" content="PLANET GRIDDLE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="styles/styles.min.css" />
@@ -19,11 +19,10 @@
   
   <body data-template="<?=$template_name?>">
     
-    <div id="dvPageWrapper" class="page-wrapper">
-      <?php include "partials/header.php" ?>
-      <main>
-        <?php include $target_file; ?>        
-      </main>
+    <div class="page-wrapper container-fluid">
+      
+      <?php include $target_file; ?> 
+      
     </div>
 
     <?php include "partials/footer.php" ?>
