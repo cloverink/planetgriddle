@@ -1,5 +1,7 @@
 @BASE-FONT : 'PT Sans Narrow', sans-serif;
 @COLOR-BLACK : #1a1b1b;
+@COLOR-GRAY : #85888a;
+@WRAPPER-WIDTH : 1280px;
 
 .font-PT {
   font-family: @BASE-FONT;
@@ -18,8 +20,11 @@ html, body {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
+a { 
+  text-decoration: none; 
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -30,30 +35,36 @@ body {
   background-attachment: fixed;
 
   .page-wrapper {
-    margin: 0 auto; 
-    width: 100%;
     min-height: ~'calc(100% - 80px)';
-    max-width: 1280px;
-    display: flex;
-    flex-direction: row;
+    margin: 0 auto; width: 100%;
+    max-width: @WRAPPER-WIDTH;
+    display: flex; flex-direction: row;
 
     .content {
 
-      
-      width: 100%;
-      display: flex;
-
+      width: 100%; display: flex;
 
       .content-left {
-        background: @COLOR-BLACK;
+        background: @COLOR-BLACK; color: #FFF;
+
         .logo {
           background: url("/assets/images/logo.png") center center no-repeat;
-          background-size: 100% auto;
-          border-bottom: solid 1px #FFF;
-          width: 90%;
-          padding-bottom: 80%;
-          margin: 0 auto;
+          background-size: 100% auto; border-bottom: solid 1px #FFF; width: 90%; 
+          padding-bottom: 75%; margin: 0 auto;
         }
+
+        h2.title { text-align: center; letter-spacing: -1px; margin: 20px 0; text-transform: uppercase; }
+        p { font-size: 16px; letter-spacing: 0.07em; margin-bottom: 20px; }
+
+        .box {
+          border: solid 2px #FFF; width: ~'calc(100% - 10px)'; padding: 25px 0; text-align: center; margin: 0 auto 25px;
+
+          h3 { text-transform: uppercase; text-align: center; margin: 0 auto 20px; }
+          hr { width: 70%; }
+          div { font-size: 17px; }
+
+        }
+
       }
       .content-right {
 

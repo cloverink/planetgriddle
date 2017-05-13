@@ -1,0 +1,22 @@
+nav {
+  width: 100%;
+  margin: 70px auto;
+
+  a {
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFF;
+    transition: all .3s ease;
+
+    & + a {
+      margin-left: 50px;
+    }
+
+    &:hover {
+      color: @COLOR-GRAY;
+    }
+  }
+}

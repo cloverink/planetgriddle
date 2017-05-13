@@ -1,7 +1,9 @@
 <?php
 
 class Helper {
-  
+  public function getTemplate($name) {
+    return "templates/" . $name . ".php";
+  }
 }
 
 
