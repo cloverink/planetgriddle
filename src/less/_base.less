@@ -161,7 +161,46 @@ body {
               width: 100%;
               padding: 30px 30px;
             } // form
+          } // .reservation
+
+          &.blog {
+            padding: 30px 40px;
+            min-height: ~'calc(100% - 166px)'; padding: 0 40px;
+
+            .row {
+              width: 100%;
+              margin-left: 0;
+              margin-right: 0;
+              padding-bottom: 40px;
+              padding-top: 20px;
+
+              .topic {
+                border: none;
+                margin-bottom: 0;
+                padding-left: 0px;
+                padding-bottom: 0;
+                
+                font-size: 23px;
+              }
+
+              .datetime {
+                padding-left: 0;
+                padding-bottom: 20px;
+              }
+
+              .thump {
+                padding-bottom: 40%;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              & + .row {
+                border-top: solid 1px;
+              }
+            }
           }
+
 
         }
 

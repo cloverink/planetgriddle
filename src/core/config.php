@@ -120,3 +120,23 @@ $menu_food = [
     ]
   ],
 ];
+
+
+
+$blog = [
+
+  [
+    "topic" => "MOTHERʼS DAY LUNCH",
+    "datetime" => "14 MAY 17 l 11:00 AM - 3:00 PM",
+    "thump" => "/assets/images/thump1.jpg",
+    "description" => "Celebrate the leading Lady in your life with a love - filled 5 course menu. Weʼll take care of everything, so you can focus on whatʼs ..."
+  ],
+  [
+    "topic" => "SMOOTHIES WEEK",
+    "datetime" => "23 MAY 17 l 9:30 AM - 2:30 PM",
+    "thump" => "/assets/images/thump2.jpg",
+    "description" => "Weʼve crafted three unique smoothies to pair with our signature meze, itʼs up to you to decide for Smoothies Week at Planet Griddle"
+  ]
+
+];
+
