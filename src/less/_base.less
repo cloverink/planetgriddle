@@ -88,6 +88,14 @@ body {
 
           margin-top: auto;
 
+          &.reservation {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+            font-size: 17px;
+            line-height: 20px;
+          }
+
         }
 
       }
@@ -97,17 +105,20 @@ body {
         .content-detail {
           background: @COLOR-BLACK; width: 100%; color: #FFF;
 
+          .topic {
+            width: 100%;
+            font-size: 30px;
+            padding: 20px;
+            line-height: 30px;
+            border-bottom: solid 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+          }
+
           &.menu {
             min-height: ~'calc(100% - 166px)'; padding: 0 40px;
             .row {
-              .topic {
-                width: 100%;
-                font-size: 30px;
-                padding: 20px;
-                line-height: 30px;
-                border-bottom: solid 1px;
-                margin-bottom: 20px;
-              }
+              
 
               .menu,
               .price {
@@ -123,7 +134,35 @@ body {
                 border-bottom: none;
               }
             }
+          } // .menu
+
+          &.reservation {
+            
+            padding: 0 40px;
+
+            .topic {
+              padding-left: 0;
+            }
+
+            p {
+              span {
+                display: block;
+                font-size: 17px;
+                line-height: 20px;
+                padding: 5px 0;
+                &.tel {
+                  font-size: 25px;
+                  line-height: 25px;
+                }
+              }
+            } // p
+
+            form {
+              width: 100%;
+              padding: 30px 30px;
+            } // form
           }
+
         }
 
       }
