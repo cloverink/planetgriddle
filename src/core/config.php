@@ -26,7 +26,8 @@ ob_start("sanitize_output");
 
 
 
-
+$site_background_image = "/assets/images/bg.jpg";
+$site_google_map_api = "AIzaSyBifc4q3Rgjph4MgJ1AZNCvyNi8EyPPy4M";
 
 $social_link = [
   "fb" => "http://facebook.com",

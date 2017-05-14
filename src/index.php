@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/styles.min.css" />
   </head>
   
-  <body data-template="<?=$template_name?>">
+  <body data-template="<?=$template_name?>" style="background-image:url('<?=$site_background_image?>')">
     
     <div class="page-wrapper container">
       

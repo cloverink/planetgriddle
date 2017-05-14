@@ -65,6 +65,7 @@ var Main = (function (self) {
   my.init = function () {
     
     if($("body[data-template='reservation']").length) func.initReservation();
+    //if($("body[data-template='contact']").length) func.initMap();
 
   };
 
