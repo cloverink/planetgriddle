@@ -23,3 +23,100 @@ function sanitize_output($buffer) {
 }
 
 ob_start("sanitize_output");
+
+
+
+
+
+$social_link = [
+  "fb" => "http://facebook.com",
+  "tw" => "http://twitter.com",
+  "fq" => "http://foursquare.com",
+  "ig" => "http://instagram.com",
+];
+
+$nav_menu = [
+  [
+    "label" => "home",
+    "link"  => "/"
+  ],
+  [
+    "label" => "menu",
+    "link"  => "/menu"
+  ],
+  [
+    "label" => "reservation",
+    "link"  => "/reservation"
+  ],
+  [
+    "label" => "blog",
+    "link"  => "/blog"
+  ],
+  [
+    "label" => "contact",
+    "link"  => "/contact"
+  ],
+];
+
+
+$menu_food = [
+  [
+    "name" => "SALADS",
+    "lists" => [
+      [
+        "name" => "GREEN FIELDS SALAD",
+        "price" => "$13"
+      ],
+      [
+        "name" => "FIVE TOMATOES SALAD",
+        "price" => "$13"
+      ],
+      [
+        "name" => "SUMMER VEGETABLES SALAD",
+        "price" => "$15"
+      ],
+      [
+        "name" => "ROASTED BROCCOLI & COLIFLOWER SALAD",
+        "price" => "$13"
+      ]
+    ]
+  ],
+  [
+    "name" => "SOUPS",
+    "lists" => [
+      [
+        "name" => "BEETROOT AND CREAM SOUP",
+        "price" => "$17"
+      ],
+      [
+        "name" => "BEETROOT AND CREAM SOUP",
+        "price" => "$17"
+      ],
+    ]
+  ],
+  [
+    "name" => "MAINS",
+    "lists" => [
+      [
+        "name" => "PESTO LAMB CUTLETS WITH SPRING RATATOUILLE",
+        "price" => "$25"
+      ],
+      [
+        "name" => "ROAST CAPSICUM, TOMATO AND GARLIC STEAK",
+        "price" => "$23"
+      ],
+      [
+        "name" => "SPICE - RUBBED STEAK WITH BAKED JACKET POTATOES",
+        "price" => "$25"
+      ],
+      [
+        "name" => "SPICE - CRUSTED CHICKEN SLICES",
+        "price" => "$15"
+      ],
+      [
+        "name" => "GOLDEN ROASTED LEMON AND TARRAGON CHICKEN",
+        "price" => "$18"
+      ],
+    ]
+  ],
+];

@@ -42,10 +42,14 @@ body {
 
     .content {
 
-      width: 100%; display: flex;
+      width: 100%; display: flex; position: relative;
 
       .content-left {
         background: @COLOR-BLACK; color: #FFF;
+
+        display: flex;
+        flex-direction: column;
+
 
         .logo {
           background: url("/assets/images/logo.png") center center no-repeat;
@@ -54,7 +58,26 @@ body {
         }
 
         h2.title { text-align: center; letter-spacing: -1px; margin: 20px 0; text-transform: uppercase; }
-        p { font-size: 16px; letter-spacing: 0.07em; margin-bottom: 20px; }
+
+        
+        h4 {
+          margin: 0 0;
+          
+          &.topic {
+            position: relative; margin: 0 0 15px; padding-bottom: 15px; text-transform: uppercase;
+          }
+
+          &:after {
+            content: ''; position: absolute; width: 50%; height: 1px; background: #FFF; left: 0; bottom: 0;
+          }
+
+          & + div {
+            font-size: 15px; line-height: 18px; padding: 5px 0;
+          }
+        }
+
+
+        p { font-size: 16px; line-height: 20px; letter-spacing: 0.07em; margin-bottom: 20px; text-align: justify; }
 
         .box {
           border: solid 2px #FFF; width: ~'calc(100% - 10px)'; padding: 25px 0; text-align: center; margin: 0 auto 25px;
@@ -63,10 +86,45 @@ body {
           hr { width: 70%; }
           div { font-size: 17px; }
 
+          margin-top: auto;
+
         }
 
       }
+
       .content-right {
+
+        .content-detail {
+          background: @COLOR-BLACK; width: 100%; color: #FFF;
+
+          &.menu {
+            min-height: ~'calc(100% - 166px)'; padding: 0 40px;
+            .row {
+              .topic {
+                width: 100%;
+                font-size: 30px;
+                padding: 20px;
+                line-height: 30px;
+                border-bottom: solid 1px;
+                margin-bottom: 20px;
+              }
+
+              .menu,
+              .price {
+                font-size: 18px;
+                line-height: 18px;
+                padding: 10px 0;
+              }
+
+              border-bottom: solid 1px;
+              padding-bottom: 20px;
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
 
       }
     }
