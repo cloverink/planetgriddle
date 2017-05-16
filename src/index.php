@@ -16,7 +16,7 @@
     
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <link rel="stylesheet" href="styles/styles.min.css" />
+    <style><?php echo file_get_contents("styles/styles.min.css"); ?></style>
   </head>
   
   <body data-template="<?=$template_name?>" style="background-image:url('<?=$site_background_image?>')">
@@ -29,7 +29,7 @@
 
     <?php include "partials/footer.php" ?>
     
-    <script src="scripts/vendors.min.js"></script>
-    <script src="scripts/apps.min.js"></script>
+    <script><?php echo file_get_contents("scripts/vendors.min.js"); ?></script>
+    <script><?php echo file_get_contents("scripts/apps.min.js"); ?></script>
   </body>
 </html>
